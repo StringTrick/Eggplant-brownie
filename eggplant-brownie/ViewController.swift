@@ -10,11 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    let name:String = "eggplant brownie"
+    let happiness:String = "5"
+    
+    
+    @IBAction func add () {
+        print("Eaten an \(name) with happiness \(happiness)")
     }
+    
 
 
 }
-
