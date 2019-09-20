@@ -14,6 +14,8 @@
 		BF6D6953233513DC004E9895 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6D6951233513DC004E9895 /* LaunchScreen.storyboard */; };
 		BF6D695E233513DC004E9895 /* eggplant_brownieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D695D233513DC004E9895 /* eggplant_brownieTests.swift */; };
 		BF6D6969233513DC004E9895 /* eggplant_brownieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D6968233513DC004E9895 /* eggplant_brownieUITests.swift */; };
+		BF6D697B2335615A004E9895 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D697A2335615A004E9895 /* Meal.swift */; };
+		BF6D697D23356232004E9895 /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D697C23356232004E9895 /* item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		BF6D6968233513DC004E9895 /* eggplant_brownieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eggplant_brownieUITests.swift; sourceTree = "<group>"; };
 		BF6D696A233513DC004E9895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF6D697623351F4E004E9895 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		BF6D697A2335615A004E9895 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		BF6D697C23356232004E9895 /* item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,9 @@
 		BF6D693C233513DB004E9895 = {
 			isa = PBXGroup;
 			children = (
+				BF6D6977233560EC004E9895 /* models */,
+				BF6D6979233560EC004E9895 /* viewcontrollers */,
+				BF6D6978233560EC004E9895 /* views */,
 				BF6D6947233513DB004E9895 /* eggplant-brownie */,
 				BF6D695C233513DC004E9895 /* eggplant-brownieTests */,
 				BF6D6967233513DC004E9895 /* eggplant-brownieUITests */,
@@ -125,6 +132,32 @@
 				BF6D696A233513DC004E9895 /* Info.plist */,
 			);
 			path = "eggplant-brownieUITests";
+			sourceTree = "<group>";
+		};
+		BF6D6977233560EC004E9895 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				BF6D697A2335615A004E9895 /* Meal.swift */,
+				BF6D697C23356232004E9895 /* item.swift */,
+			);
+			name = models;
+			path = "eggplant-brownie/models";
+			sourceTree = "<group>";
+		};
+		BF6D6978233560EC004E9895 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = views;
+			path = "eggplant-brownie/views";
+			sourceTree = "<group>";
+		};
+		BF6D6979233560EC004E9895 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = viewcontrollers;
+			path = "eggplant-brownie/viewcontrollers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF6D697D23356232004E9895 /* item.swift in Sources */,
 				BF6D694B233513DB004E9895 /* ViewController.swift in Sources */,
+				BF6D697B2335615A004E9895 /* Meal.swift in Sources */,
 				BF6D6949233513DB004E9895 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
