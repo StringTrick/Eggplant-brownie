@@ -37,11 +37,14 @@ func allCalories(calories:Array<Double>) -> Double {
 allCalories(calories: [10.5,100,300,500])
 
 class Meal {
-    var happiness:Int = 5
-    var name:String = "eggplant brownie"
+    var happiness:Int?
+    var name:String?
+    
 }
 
 var brownie = Meal()
+brownie.name = "eggplant brownie"
 
 print(brownie.happiness)
 print(brownie.name)
+print(brownie.name!.uppercased())
