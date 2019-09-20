@@ -37,14 +37,13 @@ func allCalories(calories:Array<Double>) -> Double {
 allCalories(calories: [10.5,100,300,500])
 
 
-class Meal {
-    var happiness:Int?
-    var name:String?
-    
-    init(name:String, happiness:Int) {
-        self.name = name
-        self.happiness = happiness
-    }
-}
+let brownie = Meal(name: "eggplant brownie",
+                   happiness: 5)
+print(brownie.name)
 
-let brownie = Meal(name: "eggplant brownie", happiness: 5)
+let item1 = Item(name: "brownie", calories: 115)
+lei item2 = Item(name: "vegan cream", calories: 40)
+brownie.items.append(item1)
+brownie.items.append(item2)
+
+print(brownie.allCalories())
