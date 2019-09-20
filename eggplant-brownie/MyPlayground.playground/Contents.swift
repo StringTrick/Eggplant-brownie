@@ -36,3 +36,12 @@ func allCalories(calories:Array<Double>) -> Double {
 }
 allCalories(calories: [10.5,100,300,500])
 
+class Meal {
+    var happiness:Int = 5
+    var name:String = "eggplant brownie"
+}
+
+var brownie = Meal()
+
+print(brownie.happiness)
+print(brownie.name)
