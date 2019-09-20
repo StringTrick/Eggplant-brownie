@@ -48,3 +48,7 @@ brownie.name = "eggplant brownie"
 print(brownie.happiness)
 print(brownie.name)
 print(brownie.name!.uppercased())
+
+if let name = brownie.name {
+    print(name.uppercased())
+}
