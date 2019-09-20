@@ -27,3 +27,12 @@ for calories in totalCalories {
     print(calories)
 }
 
+func allCalories(calories:Array<Double>) -> Double {
+    var total:Double = 0
+    for c in calories {
+        total += c
+    }
+    return total
+}
+allCalories(calories: [10.5,100,300,500])
+
