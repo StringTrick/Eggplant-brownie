@@ -10,10 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //Declaração de variáveis conectadas ao Main storyboard
     @IBOutlet var nameField : UITextField!
     @IBOutlet var happinessField : UITextField!
     
-    
+    //Funçao para adicionar dados ao clicar no Button
     @IBAction func add () {
         let name = nameField.text
         let happiness = happinessField.text
