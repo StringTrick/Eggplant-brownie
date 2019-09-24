@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF0DA30A233A5C01006E32EC /* MealsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0DA309233A5C01006E32EC /* MealsTableViewController.swift */; };
 		BF6D6949233513DB004E9895 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6D6948233513DB004E9895 /* AppDelegate.swift */; };
 		BF6D6950233513DC004E9895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF6D694F233513DC004E9895 /* Assets.xcassets */; };
 		BF6D6953233513DC004E9895 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6D6951233513DC004E9895 /* LaunchScreen.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF0DA309233A5C01006E32EC /* MealsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsTableViewController.swift; sourceTree = "<group>"; };
 		BF6D6945233513DB004E9895 /* eggplant-brownie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eggplant-brownie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6D6948233513DB004E9895 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF6D694F233513DC004E9895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				BF974DC0233903F300786F16 /* ViewController.swift */,
+				BF0DA309233A5C01006E32EC /* MealsTableViewController.swift */,
 			);
 			name = viewcontrollers;
 			path = "eggplant-brownie/viewcontrollers";
@@ -291,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF0DA30A233A5C01006E32EC /* MealsTableViewController.swift in Sources */,
 				BF974DBF2338FD4F00786F16 /* Item.swift in Sources */,
 				BF6D697B2335615A004E9895 /* Meal.swift in Sources */,
 				BF974DC1233903F300786F16 /* ViewController.swift in Sources */,
