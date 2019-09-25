@@ -11,5 +11,4 @@ class Item  {
         self.calories = calories
     }
     
-    
 }
