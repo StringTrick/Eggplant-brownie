@@ -6,7 +6,7 @@ class MealsTableViewController : UITableViewController {
                  Meal(name: "Cuzcuz", happiness: 1),
                  Meal(name: "Bife a cavalo", happiness: 4)]
     //Função adicionar refeição a tabela
-    func add (meal:Meal) {
+    func add (_ meal:Meal) { // Adicionando underline para simplificar
         meals.append(meal)
         tableView.reloadData()
     }

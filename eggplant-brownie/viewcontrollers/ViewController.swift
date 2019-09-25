@@ -22,7 +22,7 @@ class ViewController: UIViewController {
             if (mealsTable == nil){
                 return
             }
-            mealsTable!.add(meal: meal)
+            mealsTable!.add(meal)
             //Removendo tela adicional da pilha do navegador ao adicionar nova celula
             if let navigation = navigationController {
                 navigation.popViewController(animated: true)
