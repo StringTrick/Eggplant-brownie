@@ -98,7 +98,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="pI7-Qp-qch"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="addMeal" id="pI7-Qp-qch"/>
                                 </connections>
                             </button>
                         </barButtonItem>
