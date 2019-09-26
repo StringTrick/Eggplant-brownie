@@ -1,6 +1,6 @@
 import UIKit
 
-class MealsTableViewController : UITableViewController {
+class MealsTableViewController : UITableViewController, AddAMealDelegate {
     //Declaração de array Meals
     var meals = [Meal(name: "Eggplant Brownie", happiness: 5),
                  Meal(name: "Cuzcuz", happiness: 1),
@@ -14,7 +14,7 @@ class MealsTableViewController : UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "addMeal") { // adicionando identificador como boa prática
         let view = segue.destination as! ViewController
-        view.mealsTable = self
+        view.delegate = self
         }
     }
     //Declaração de linhas da tabela
