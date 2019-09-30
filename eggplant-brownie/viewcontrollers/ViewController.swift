@@ -44,7 +44,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.textLabel!.text = item.name
         return cell }
     
-     
         @IBAction  func add(){
         if (nameField == nil || happinessField == nil) {
             return
