@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, addAnItemDelegate {
     //Conexão com os TextField do Storyboard
     @IBOutlet var nameField : UITextField?
     @IBOutlet var happinessField : UITextField?
@@ -14,6 +14,28 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         Item(name: "Arroz", calories: 10 ),
         Item(name: "Feijao", calories: 20),
     ]
+    
+    @IBOutlet var tableView : UITableView?
+    
+    func add(_ item: Item) {
+        items.append(item)
+        if let table = tableView {
+            table.reloadData()
+        }
+    }
+    
+    override func viewDidLoad() {
+        let newItemButton = UIBarButtonItem(title: "New Item", style: UIBarButtonItem.Style.plain, target: self, action: #selector (showNewItem))
+        navigationItem.rightBarButtonItem = newItemButton
+    }
+    
+    @objc func showNewItem () {
+        let newItem = NewItemViewController(delegate: self)
+        navigationController?.pushViewController(newItem, animated: true)
+        
+    }
+    
+    
     //função para criar o ONCLICK das celulas
     func tableView(_ tableView: UITableView, didSelectRowAt
         indexPath: IndexPath) {
