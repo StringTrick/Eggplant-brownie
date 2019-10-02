@@ -21,6 +21,7 @@
 		BF974DBF2338FD4F00786F16 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF974DBE2338FD4F00786F16 /* Item.swift */; };
 		BF974DC1233903F300786F16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF974DC0233903F300786F16 /* ViewController.swift */; };
 		BF974DC3233906CB00786F16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF974DC2233906CB00786F16 /* Main.storyboard */; };
+		BFED75D22345383C007AC8C9 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFED75D12345383C007AC8C9 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		BF974DBE2338FD4F00786F16 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		BF974DC0233903F300786F16 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF974DC2233906CB00786F16 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BFED75D12345383C007AC8C9 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			children = (
 				BF974DC2233906CB00786F16 /* Main.storyboard */,
 				BF0C1D6423423EF500DFA050 /* NewItemViewController.xib */,
+				BFED75D12345383C007AC8C9 /* Alert.swift */,
 			);
 			name = views;
 			path = "eggplant-brownie/views";
@@ -307,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFED75D22345383C007AC8C9 /* Alert.swift in Sources */,
 				BF0DA30A233A5C01006E32EC /* MealsTableViewController.swift in Sources */,
 				BF974DBF2338FD4F00786F16 /* Item.swift in Sources */,
 				BF6D697B2335615A004E9895 /* Meal.swift in Sources */,

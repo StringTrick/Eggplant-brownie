@@ -19,7 +19,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func add(_ item: Item) {
         items.append(item)
-        tableView?.reloadData()
+        if let table = tableView {
+            table.reloadData()
+        } else {
+            Alert(controller: self).show("Unable to update items table")
+        }
     }
     
     override func viewDidLoad() {
