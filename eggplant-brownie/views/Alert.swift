@@ -9,8 +9,8 @@ class Alert {
         self.controller = controller
     }
     
-    func show(_ message:String) {
-        let alert = UIAlertController(title: "Sorry", message: message, preferredStyle: UIAlertController.Style.alert)
+    func show(_ title:String = "Sorry", message:String = "Unexpected error.") {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         let ok = UIAlertAction(title: "Understood", style: UIAlertAction.Style.cancel, handler: nil)
         alert.addAction(ok)
         controller.present(alert, animated: true, completion: nil)

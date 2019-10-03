@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if let table = tableView {
             table.reloadData()
         } else {
-            Alert(controller: self).show("Unable to update items table")
+            Alert(controller: self).show()
         }
     }
     
@@ -42,19 +42,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, didSelectRowAt
         indexPath: IndexPath) {
         if let cell = tableView.cellForRow(at: indexPath){
-        if(cell.accessoryType ==
-            UITableViewCell.AccessoryType.none) {
-            cell.accessoryType = UITableViewCell.AccessoryType.checkmark
-            let item = items[indexPath.row]
-            selected.append(item)
+            if(cell.accessoryType ==
+                UITableViewCell.AccessoryType.none) {
+                cell.accessoryType = UITableViewCell.AccessoryType.checkmark
+                let item = items[indexPath.row]
+                selected.append(item)
         } else {
             cell.accessoryType = UITableViewCell.AccessoryType.none
             let item = items[indexPath.row]
-            if let position = selected.index(of: item){
-            selected.remove(at: position)
+                if let position = selected.index(of: item){
+                    selected.remove(at: position)
+                    } else {
+                    Alert(controller: self).show()
+                }
+            }
+        } else {
+            Alert(controller: self).show()
         }
-      }
-    }
   }
     //Definindo número de linhas para a tabela do storyboard
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -66,26 +70,45 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let item = items[row]
         let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: nil)
         cell.textLabel!.text = item.name
-        return cell }
-    
-        @IBAction  func add(){
-        if (nameField == nil || happinessField == nil) {
-            return
-        }
-        let name:String = nameField!.text!
+        return cell
         
-        if let happiness = Int(happinessField!.text!) {
-            let meal = Meal(name: name, happiness: happiness, items: selected)
-            print("eaten \(meal.name) eith happiness \(meal.happiness) with \(meal.items)!")
-            //Boas práticas para desviar erros
-            if (delegate == nil){
-                return
-            }
-            delegate!.add(meal)
-            //Removendo tela adicional da pilha do navegador ao adicionar nova celula
-            if let navigation = navigationController {
-                navigation.popViewController(animated: true)
-            }
+    }
+    
+    func convertToInt (_ text:String?) -> Int? {
+        if let number = text {
+            return Int(number)
         }
+        return nil
+    }
+    
+    
+    func getMealFromForm() -> Meal? {
+        if let name = nameField?.text {
+            if let happiness = convertToInt(happinessField?.text) {
+                
+                let meal = Meal(name: name, happiness: happiness, items: selected)
+                
+                print("eaten \(meal.name) eith happiness \(meal.happiness) with \(meal.items)!")
+                
+                return meal
+                }
+            }
+        return nil
+    }
+        @IBAction  func add(){
+            
+            if let meal = getMealFromForm() {
+                if let meals = delegate {
+                    meals.add(meal)
+            //Removendo tela adicional da pilha do navegador ao adicionar nova celula
+                    if let navigation = navigationController {
+                        navigation.popViewController(animated: true)
+                    } else{
+                        Alert(controller: self).show(message:"Unable to go back, but the meal was added.")
+                    }
+                    return
+                }
+            }
+        Alert(controller: self).show()
     }
 }
