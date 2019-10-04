@@ -41,23 +41,11 @@ class MealsTableViewController : UITableViewController, AddAMealDelegate {
             if let indexPath = tableView.indexPath(for: cell) {
                 let row = indexPath.row
                 let meal = meals[row]
-                print("Long Press \(meal.name)")
-                
-
-                
-                let details = UIAlertController(title: meal.name, message: meal.details(), preferredStyle: UIAlertController.Style.alert)
-
-                let remove = UIAlertAction(title: "Remove", style: UIAlertAction.Style.destructive, handler: { action in
+            
+                RemoveMealController(controller: self).show(meal, handler: { action in
                     self.meals.remove(at: row)
                     self.tableView.reloadData()
                 })
-                details.addAction(remove)
-                
-                let cancel = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil)
-                details.addAction(cancel)
-                
-                present(details, animated: true, completion: nil)
-                
             }
         }
     }

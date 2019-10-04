@@ -21,6 +21,7 @@
 		BF974DBF2338FD4F00786F16 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF974DBE2338FD4F00786F16 /* Item.swift */; };
 		BF974DC1233903F300786F16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF974DC0233903F300786F16 /* ViewController.swift */; };
 		BF974DC3233906CB00786F16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF974DC2233906CB00786F16 /* Main.storyboard */; };
+		BFE1594F23478D48006D957E /* RemoveMealController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE1594E23478D48006D957E /* RemoveMealController.swift */; };
 		BFED75D22345383C007AC8C9 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFED75D12345383C007AC8C9 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		BF974DBE2338FD4F00786F16 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		BF974DC0233903F300786F16 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF974DC2233906CB00786F16 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BFE1594E23478D48006D957E /* RemoveMealController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveMealController.swift; sourceTree = "<group>"; };
 		BFED75D12345383C007AC8C9 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,6 +175,7 @@
 				BF0C1D6723423F7C00DFA050 /* NewItemViewController.swift */,
 				BF974DC0233903F300786F16 /* ViewController.swift */,
 				BF0DA309233A5C01006E32EC /* MealsTableViewController.swift */,
+				BFE1594E23478D48006D957E /* RemoveMealController.swift */,
 			);
 			name = viewcontrollers;
 			path = "eggplant-brownie/viewcontrollers";
@@ -310,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE1594F23478D48006D957E /* RemoveMealController.swift in Sources */,
 				BFED75D22345383C007AC8C9 /* Alert.swift in Sources */,
 				BF0DA30A233A5C01006E32EC /* MealsTableViewController.swift in Sources */,
 				BF974DBF2338FD4F00786F16 /* Item.swift in Sources */,
