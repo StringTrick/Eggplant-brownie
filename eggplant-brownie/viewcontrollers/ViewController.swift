@@ -96,11 +96,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return nil
     }
         @IBAction  func add(){
-            
             if let meal = getMealFromForm() {
                 if let meals = delegate {
                     meals.add(meal)
-            //Removendo tela adicional da pilha do navegador ao adicionar nova celula
+                    //Removendo tela adicional da pilha do navegador ao adicionar nova celula
                     if let navigation = navigationController {
                         navigation.popViewController(animated: true)
                     } else{
